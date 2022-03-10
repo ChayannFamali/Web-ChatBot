@@ -97,4 +97,4 @@ learning_rate_reduction = callbacks.ReduceLROnPlateau(monitor='val_accuracy', pa
 callbacks =[earlystopping,learning_rate_reduction]
 
 hist = model.fit(np.array(train_x), np.array(train_y), epochs=500, batch_size=5, verbose=1)
-model.save("C:/Users/dimav/Desktop/pet_proj/Web_chat_bot/chatbot_model.h5", hist)
+model.save("/Web_chat_bot/chatbot_model.h5", hist)
